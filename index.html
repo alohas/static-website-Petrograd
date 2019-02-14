@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <h1>Petrograd</h1>
+        <h2>Same as at Babushka</h2>
+        <div id="filter">Filter:</div>
+        <div class="nav">
+            <a href="#" id="all">All</a>
+        </div>
+
+    </header>
+
+    <main></main>
+
+    <div class="bg-modal hide">
+        <article class="modal-content">
+           <button id="close">X</button>
+            <h4 class="modal-name"></h4>
+            <h5 class="modal-price"></h5>
+            <h5 class="modal-oldPrice"></h5>
+            <h6 class="modal-veg veg"></h6>
+            <h6 class="modal-alc alc"></h6>
+            <h6 class="modal-reg"></h6>
+            <h6 class="modal-aller"></h6>
+            <img class="modal-img" src="" alt="dish">
+            <p class="modal-de">description</p>
+        </article>
+    </div>
+
+    <template id="myTemp">
+        <article>
+            <h4>name</h4>
+            <h5>price</h5>
+            <h6 class="alc"></h6>
+            <h6 class="veg"></h6>
+            <img src="img" alt="dish">
+            <p>description</p>
+            <button>Details</button>
+        </article>
+    </template>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

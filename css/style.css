@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+
+* {
+    margin: 0;
+}
+
+
+body {
+    background-color: #b72323;
+    padding: 0;
+}
+
+header {
+    background-image: url("../images/carpet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: auto;
+    color: white;
+    width: 100%;
+}
+
+
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+    font-size: 13vw;
+}
+
+header h2 {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 8vw;
+}
+
+header div.nav {
+    background-color: rgba(0, 0, 0, .4);
+    font-family: 'Raleway', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 5vw;
+    display: block;
+    text-transform: capitalize;
+
+}
+
+#filter {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 5.5vw;
+    display: block;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .4);
+
+}
+
+
+
+.soldout {
+    opacity: 0.2;
+}
+
+.soldouth {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.discount {
+    color: #790b0b;
+}
+
+main section {
+    padding: 15px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+h3 {
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 6vw;
+    color: white;
+    background-color: black;
+    text-transform: capitalize;
+    width: auto;
+}
+
+h4 {
+    font-size: 7vw;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 4vw;
+    padding: 10px;
+}
+
+h6 {
+    font-size: 4vw;
+    padding: 10px;
+}
+
+h6.veg {
+    color: darkgreen;
+}
+
+article p {
+    font-size: 4vw;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+article h4 {
+    text-align: center;
+}
+
+
+article {
+    background-color: #ddcbb4;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+button {
+    font-size: 4vw;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.bg-modal {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-background {
+    background-color: dimgrey;
+    border: 1px solid red;
+    margin: 1em;
+    padding: 2em;
+}
+
+article.modal-content {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 3em;
+}
+
+article.modal-content h5,
+article.modal-content h6 {
+    font-size: 3vw;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.bg-modal article.modal-content p.modal-de {
+    font-size: 2.5vw;
+}
+
+img.modal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 645px) {
+
+    header h1 {
+        font-size: 11vw;
+    }
+
+    header h2 {
+        font-size: 6vw;
+    }
+
+
+    a {
+        font-size: 3vw;
+        padding: 10px 12px;
+    }
+
+    #filter {
+        font-size: 4vw;
+
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    h5,
+    h6 {
+        font-size: 3vw;
+    }
+
+    article p {
+        font-size: 2.5vw;
+    }
+
+    button {
+        font-size: 3vw;
+        padding: 5px 15px;
+    }
+
+    article.modal-content {
+        margin-left: 8em;
+        margin-right: 8em;
+        margin-top: 1em;
+        padding-left: 20px;
+        padding-left: 20px;
+    }
+
+    article.modal-content h5,
+    article.modal-content h6 {
+        font-size: 2.5vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    div.bg-modal article.modal-content p.modal-de {
+        font-size: 2vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 960px) {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #filter,
+    div.nav {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #filter,
+    div.nav {
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 6.5vw;
+    }
+
+    header h2 {
+        font-size: 4vw;
+    }
+
+
+    a {
+        font-size: 3vw;
+        padding: 10px 12px;
+        display: inline-block;
+    }
+
+    #filter {
+        font-size: 3.4vw;
+
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    h4 {
+        font-size: 2.8vw;
+    }
+
+    h5,
+    h6 {
+        font-size: 2vw;
+    }
+
+    article p {
+        font-size: 1.5vw;
+    }
+
+    button {
+        font-size: 1.4vw;
+        padding: 5px 15px;
+    }
+
+    article.modal-content {
+        margin-left: 8em;
+        margin-right: 8em;
+        margin-top: 5em;
+        padding-left: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1475px) {
+
+    main section {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    h4 {
+        font-size: 2.4vw;
+    }
+
+    h5,
+    h6 {
+        font-size: 1.4vw;
+    }
+
+    article p {
+        font-size: 1vw;
+    }
+
+    button {
+        font-size: 1vw;
+        padding: 4px 12px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1100px) {
+    article.modal-content {
+        margin-left: 8em;
+        margin-right: 8em;
+        margin-top: 1em;
+        padding-left: 20px;
+        padding-left: 20px;
+    }
+
+    article.modal-content h5,
+    article.modal-content h6 {
+        font-size: 1.4vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    div.bg-modal article.modal-content p.modal-de {
+        font-size: 1.2vw;
+    }
+    img.modal-img {
+        width: 35%
+    }
+
+}
