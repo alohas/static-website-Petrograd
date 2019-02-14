@@ -86,8 +86,11 @@ function showDetails(id) {
         modal.querySelector("h6.modal-reg").textContent = "Region: unknown";
     }
     if (id.allergens.length) {
-        console.log(id.allergens);
-        modal.querySelector("h6.modal-aller").textContent = "Allergens: " + id.allergens;
+        modal.querySelector("h6.modal-aller").textContent = "Allergens: "
+        modal.querySelector("h6.modal-aller").textContent += id.allergens[0];
+        for (let i = 1; i<id.allergens.length; i++) {
+            modal.querySelector("h6.modal-aller").textContent += ", " + id.allergens[i];
+        }
     } else {
         modal.querySelector("h6.modal-aller").textContent = "Allergens: none";
     }
@@ -95,9 +98,9 @@ function showDetails(id) {
     modal.querySelector("img.modal-img").alt = id.image;
 
 
-    if (id.longdescription){
-    modal.querySelector("p.modal-de").textContent = id.longdescription;
-    } else{
+    if (id.longdescription) {
+        modal.querySelector("p.modal-de").textContent = id.longdescription;
+    } else {
         modal.querySelector("p.modal-de").textContent = id.shortdescription;
     }
 
